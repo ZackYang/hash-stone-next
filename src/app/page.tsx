@@ -14,10 +14,10 @@ export default function Portfolio() {
     <>
       <Navbar />
       <Hero />
-      <SponsoredBy />
       <AboutEvent />
       <OurStats />
       <EventContent />
+      <SponsoredBy />
       <Faq />
       <Footer />
     </>

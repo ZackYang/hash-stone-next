@@ -15,6 +15,11 @@ import {
   Bars3Icon,
 } from "@heroicons/react/24/solid";
 
+import { AiOutlineBars, AiFillHome } from "react-icons/ai";
+import { BiLogoBlogger } from "react-icons/bi";
+import { FaPeopleGroup } from "react-icons/fa6";
+
+
 interface NavItemProps {
   children: React.ReactNode;
   href?: string;
@@ -28,7 +33,7 @@ function NavItem({ children, href }: NavItemProps) {
         href={href || "#"}
         target={href ? "_blank" : "_self"}
         variant="paragraph"
-        className="flex items-center gap-2 font-medium"
+        className="flex items-center gap-2 font-medium hover:text-black hover:bg-white rounded-md px-1"
       >
         {children}
       </Typography>
@@ -38,16 +43,20 @@ function NavItem({ children, href }: NavItemProps) {
 
 const NAV_MENU = [
   {
-    name: "Page",
-    icon: RectangleStackIcon,
+    name: "Home",
+    icon: AiFillHome,
   },
   {
-    name: "Account",
-    icon: UserCircleIcon,
+    name: "Services",
+    icon: AiOutlineBars,
   },
   {
-    name: "Docs",
-    icon: CommandLineIcon,
+    name: "Developers",
+    icon: FaPeopleGroup,
+  },
+  {
+    name: "Blog",
+    icon: BiLogoBlogger,
     href: "https://www.material-tailwind.com/docs/react/installation",
   },
 ];
@@ -91,13 +100,15 @@ export function Navbar() {
         <Typography
           color={isScrolling ? "blue-gray" : "white"}
           className="text-lg font-bold"
+          placeholder={isScrolling ? "blue-gray" : "white"}
+          onPointerEnterCapture={() => setIsScrolling(true)}
+          onPointerLeaveCapture={() => setIsScrolling(false)}
         >
-          Material Tailwind
+          Code Hammer
         </Typography>
         <ul
-          className={`ml-10 hidden items-center gap-6 lg:flex ${
-            isScrolling ? "text-gray-900" : "text-white"
-          }`}
+          className={`ml-10 hidden items-center gap-6 lg:flex ${isScrolling ? "text-gray-900" : "text-white"
+            }`}
         >
           {NAV_MENU.map(({ name, icon: Icon, href }) => (
             <NavItem key={name} href={href}>
