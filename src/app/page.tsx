@@ -11,7 +11,7 @@ import Faq from "../components/home/faq";
 
 export default function Portfolio() {
   return (
-    <>
+    <div>
       <Navbar />
       <Hero />
       <AboutEvent />
@@ -20,6 +20,6 @@ export default function Portfolio() {
       <SponsoredBy />
       <Faq />
       <Footer />
-    </>
+    </div>
   );
 }

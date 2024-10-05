@@ -27,7 +27,7 @@ export function AboutCard({
         }}>
         <div className="absolute inset-0 bg-black bg-opacity-70 rounded-2xl" />
         <div className="flex flex-col items-center justify-center z-10">
-          <div variant="h4" className="text-center" color="white">
+          <div className="text-center" color="white">
             {title}
           </div>
           <div

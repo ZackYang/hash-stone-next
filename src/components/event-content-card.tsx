@@ -43,10 +43,10 @@ export function EventContentCard({
         />
       </CardHeader>
       <CardBody className="col-span-full lg:col-span-3">
-        <div variant="h6" color="blue-gray" className="mb-4">
+        <div color="blue-gray" className="mb-4">
           {panel}
         </div>
-        <div variant="h2" color="blue-gray" className="mb-4 font-medium">
+        <div color="blue-gray" className="mb-4 font-medium">
           {title}
         </div>
         <div className="mb-12 md:w-8/12 font-medium !text-gray-500">
@@ -60,10 +60,10 @@ export function EventContentCard({
             size="lg"
           />
           <div>
-            <div variant="h6" color="blue-gray" className="mb-0.5">
+            <div color="blue-gray" className="mb-0.5">
               {name}
             </div>
-            <div variant="small" className="font-normal !text-gray-500">
+            <div className="font-normal !text-gray-500">
               {position}
             </div>
           </div>

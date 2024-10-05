@@ -34,7 +34,7 @@ export function Faq() {
     <section className="py-8 px-8 lg:py-20">
       <div className="container mx-auto">
         <div className="text-center">
-          <div variant="h1" color="blue-gray" className="mb-4">
+          <div color="blue-gray" className="mb-4">
             Frequently asked questions
           </div>
           <div
