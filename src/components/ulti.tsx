@@ -15,13 +15,31 @@ export function Highlight({
   );
 }
 
-export function ReverseHighlight({
+export function BlackHighlight({
+  children,
+  className
+}: {
+  children: React.ReactNode,
+  className?: string
+}) {
+  return (
+    <span className={`${className} bg-gray-900 text-white rounded-md px-2 font-semibold`}>
+      {
+        children
+      }
+    </span>
+  );
+}
+
+export function WhiteHighlight({
+  className,
   children
 }: {
+  className?: string,
   children: React.ReactNode
 }) {
   return (
-    <span className="bg-white text-black rounded-md px-2 font-semibold">
+    <span className={`${className} bg-gray-900 text-white rounded-md px-2 font-semibold`}>
       {
         children
       }

@@ -1,6 +1,5 @@
 "use client";
 
-import { Typography } from "@material-tailwind/react";
 import StatsCard from "@/components/stats-card";
 
 const STATS = [
@@ -24,27 +23,26 @@ const STATS = [
 
 export function OurStats() {
   return (
-    <section className="container mx-auto grid gap-10 px-8 py-44 lg:grid-cols-1 lg:gap-20 xl:grid-cols-2 xl:place-items-center">
-      <div>
-        <Typography variant="h6" color="orange" className="mb-6 font-medium">
+    <section className="relative min-h-[30vh] w-full  gap-10 px-8 py-10 lg:grid-cols-1 lg:gap-20 xl:grid-cols-2 xl:place-items-center bg-[url('/image/hero_bg1.jpg')] bg-bottom bg-cover bg-no-repeat">
+      <div className="absolute inset-0 h-full w-full bg-gray-900/60" />
+      <div className="container m-auto relative">
+        <div className="mb-6 font-medium text-orange-700">
           Our Stats
-        </Typography>
-        <Typography
-          className="text-5xl font-bold leading-tight lg:w-3/4"
-          color="blue-gray"
+        </div>
+        <div
+          className="text-5xl font-bold leading-tight lg:w-3/4 text-gray-50"
         >
           Conference Highlights
-        </Typography>
-        <Typography
-          variant="lead"
-          className="mt-3 w-full !text-gray-500 lg:w-9/12"
+        </div>
+        <div
+          className="mt-3 w-full text-light-secondary"
         >
           This three-day extravaganza brings together the brightest minds,
           leading innovators, and top companies in the field of Artificial
           Intelligence.
-        </Typography>
+        </div>
       </div>
-      <div>
+      <div className="container m-auto">
         <div className="grid grid-cols-2 gap-8 gap-x-28">
           {STATS.map((props, key) => (
             <StatsCard key={key} {...props} />

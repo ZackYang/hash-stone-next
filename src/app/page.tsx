@@ -2,12 +2,12 @@
 import { Navbar, Footer } from "@/components";
 
 // sections
-import Hero from "./hero";
+import Hero from "../components/home/hero";
 import SponsoredBy from "./sponsored-by";
-import AboutEvent from "./about-event";
-import OurStats from "./our-stats";
-import EventContent from "./event-content";
-import Faq from "./faq";
+import AboutEvent from "../components/home/about-event";
+import OurStats from "../components/home/our-stats";
+import EventContent from "../components/home/event-content";
+import Faq from "../components/home/faq";
 
 export default function Portfolio() {
   return (

@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.text-primary {
+  color: rgb(38 50 56 / var(--tw-text-opacity));
+}
+
+.text-light-primary {
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-secondary {
+  color: rgb(158 158 158 / var(--tw-text-opacity));
+}
+
+.text-light-secondary {
+  color: #cccccc;
+}
+
+.text-highlight {
+  color: rgb(245 124 0 / var(--tw-text-opacity))
+}
+
+.text-reverse-highlight {
+  background-color: rgb(245 124 0 / var(--tw-text-opacity));
+  border-radius: 5px;
+  padding: 0 0.5rem;
+}
+
+.text-link {
+  /* under_line */
+  text-decoration: underline;
+}

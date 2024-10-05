@@ -4,7 +4,7 @@ import {
   Collapse,
   Button,
   IconButton,
-  Typography,
+  div,
 } from "@material-tailwind/react";
 import {
   RectangleStackIcon,
@@ -28,7 +28,7 @@ interface NavItemProps {
 function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
-      <Typography
+      <div
         as="a"
         href={href || "#"}
         target={href ? "_blank" : "_self"}
@@ -36,7 +36,7 @@ function NavItem({ children, href }: NavItemProps) {
         className="flex items-center gap-2 font-medium hover:text-black hover:bg-white rounded-md px-1"
       >
         {children}
-      </Typography>
+      </div>
     </li>
   );
 }
@@ -97,15 +97,15 @@ export function Navbar() {
       className="fixed top-0 z-50 border-0"
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Typography
+        <div
           color={isScrolling ? "blue-gray" : "white"}
-          className="text-lg font-bold"
+          className={`text-lg font-bold ${isScrolling ? "text-gray-900 bg-opacity-0.5" : "text-white"}`}
           placeholder={isScrolling ? "blue-gray" : "white"}
           onPointerEnterCapture={() => setIsScrolling(true)}
           onPointerLeaveCapture={() => setIsScrolling(false)}
         >
           Code Hammer
-        </Typography>
+        </div>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${isScrolling ? "text-gray-900" : "text-white"
             }`}

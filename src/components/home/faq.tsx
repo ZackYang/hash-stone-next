@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Typography, Accordion, AccordionHeader, AccordionBody } from "@material-tailwind/react";
+import { div, Accordion, AccordionHeader, AccordionBody } from "@material-tailwind/react";
 
 const FAQS = [
   {
@@ -34,17 +34,17 @@ export function Faq() {
     <section className="py-8 px-8 lg:py-20">
       <div className="container mx-auto">
         <div className="text-center">
-          <Typography variant="h1" color="blue-gray" className="mb-4">
+          <div variant="h1" color="blue-gray" className="mb-4">
             Frequently asked questions
-          </Typography>
-          <Typography
+          </div>
+          <div
             variant="lead"
             className="mx-auto mb-24 lg:w-3/5 !text-gray-500"
           >
             Welcome to the AI Conference 2023 FAQ section. We&apos;re here to
             address your most common queries and provide you with the
             information you need to make the most of your conference experience.
-          </Typography>
+          </div>
         </div>
 
         <div className="mx-auto lg:max-w-screen-lg lg:px-20">
@@ -58,12 +58,12 @@ export function Faq() {
                 {title}
               </AccordionHeader>
               <AccordionBody>
-                <Typography
+                <div
                   color="blue-gray"
                   className="font-normal text-gray-500"
                 >
                   {desc}
-                </Typography>
+                </div>
               </AccordionBody>
             </Accordion>
           ))}

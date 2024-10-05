@@ -1,6 +1,6 @@
 import Image from "next/image";
 import {
-  Typography,
+  div,
   Card,
   CardHeader,
   CardBody,
@@ -43,15 +43,15 @@ export function EventContentCard({
         />
       </CardHeader>
       <CardBody className="col-span-full lg:col-span-3">
-        <Typography variant="h6" color="blue-gray" className="mb-4">
+        <div variant="h6" color="blue-gray" className="mb-4">
           {panel}
-        </Typography>
-        <Typography variant="h2" color="blue-gray" className="mb-4 font-medium">
+        </div>
+        <div variant="h2" color="blue-gray" className="mb-4 font-medium">
           {title}
-        </Typography>
-        <Typography className="mb-12 md:w-8/12 font-medium !text-gray-500">
+        </div>
+        <div className="mb-12 md:w-8/12 font-medium !text-gray-500">
           {des}
-        </Typography>
+        </div>
         <div className="flex items-center gap-4">
           <Avatar
             variant="circular"
@@ -60,12 +60,12 @@ export function EventContentCard({
             size="lg"
           />
           <div>
-            <Typography variant="h6" color="blue-gray" className="mb-0.5">
+            <div variant="h6" color="blue-gray" className="mb-0.5">
               {name}
-            </Typography>
-            <Typography variant="small" className="font-normal !text-gray-500">
+            </div>
+            <div variant="small" className="font-normal !text-gray-500">
               {position}
-            </Typography>
+            </div>
           </div>
         </div>
       </CardBody>
