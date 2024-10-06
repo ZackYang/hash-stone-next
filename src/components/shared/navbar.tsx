@@ -4,7 +4,6 @@ import {
   Collapse,
   Button,
   IconButton,
-  div,
 } from "@material-tailwind/react";
 import {
   RectangleStackIcon,
@@ -18,6 +17,7 @@ import {
 import { AiOutlineBars, AiFillHome } from "react-icons/ai";
 import { BiLogoBlogger } from "react-icons/bi";
 import { FaPeopleGroup } from "react-icons/fa6";
+import Link from "next/link";
 
 
 interface NavItemProps {
@@ -28,15 +28,13 @@ interface NavItemProps {
 function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
-      <div
-        as="a"
+      <Link
         href={href || "#"}
         target={href ? "_blank" : "_self"}
-        variant="paragraph"
         className="flex items-center gap-2 font-medium hover:text-black hover:bg-white rounded-md px-1"
       >
         {children}
-      </div>
+      </Link>
     </li>
   );
 }

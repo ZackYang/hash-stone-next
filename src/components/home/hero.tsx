@@ -4,9 +4,9 @@ function Hero() {
   return (
     <div className="relative min-h-[50vh] w-full bg-[url('/image/hero_bg1.jpg')] bg-top bg-cover bg-no-repeat">
       <div className="absolute inset-0 h-full w-full bg-gray-900/60" />
-      <div className="min-h-[50vh] px-8 py-16">
+      <div className="min-h-[50vh] px-8 pt-52 pb-16">
         <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-5">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-5">
             <div className="flex flex-col grow">
               <div className="text-2xl xl:text-5xl font-thin text-white text-nowrap">
                 Welcome to <span className="font-extrabold text-reverse-highlight text-black">Code Hammer</span>

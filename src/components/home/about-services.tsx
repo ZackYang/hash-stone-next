@@ -1,6 +1,6 @@
 "use client";
 
-import AboutCard from "@/components/about-card";
+import ServiceCard from "@/components/shared/ServiceCard";
 import { WhiteHighlight } from "@/components/ulti";
 
 const EVENT_INFO = [
@@ -34,7 +34,7 @@ export function AboutEvent() {
       </div>
       <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-3 gap-4 ">
         {EVENT_INFO.map((props, idx) => (
-          <AboutCard key={idx} {...props} subTitle="" />
+          <ServiceCard key={idx} {...props} subTitle="" />
         ))}
       </div>
     </section>

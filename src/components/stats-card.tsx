@@ -1,5 +1,5 @@
 
-import { div, Card } from "@material-tailwind/react";
+import { Card } from "flowbite-react";
 interface StatsCardProps {
   count: string;
   title: string;
@@ -7,7 +7,7 @@ interface StatsCardProps {
 
 export function StatsCard({ count, title }: StatsCardProps) {
   return (
-    <Card color="transparent" shadow={false}>
+    <Card color="transparent">
       <div className="font-bold" color="blue-gray">
         {count}
       </div>

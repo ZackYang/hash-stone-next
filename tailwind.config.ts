@@ -1,3 +1,4 @@
+import { button } from "@material-tailwind/react";
 import type { Config } from "tailwindcss";
 const flowbite = require("flowbite-react/tailwind");
 const withMT = require("@material-tailwind/react/utils/withMT");

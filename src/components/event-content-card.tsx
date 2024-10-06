@@ -1,6 +1,5 @@
 import Image from "next/image";
 import {
-  div,
   Card,
   CardHeader,
   CardBody,
